@@ -1,0 +1,14 @@
+{
+  "name": "mpvue-modal-extend",
+  "version": "1.0.0",
+  "description": "mpvue小程序modal组件",
+  "main": "src/modal.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "modal"
+  ],
+  "author": "Johnsen <jiajunzhou1994@163.com>",
+  "license": "MIT"
+}
