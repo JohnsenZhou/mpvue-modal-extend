@@ -16,5 +16,9 @@
     "name": "JohnsenZhou",
     "email": "jiajunzhou1994@163.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JohnsenZhou/mpvue-modal-extend"
+  },
   "license": "MIT"
 }
