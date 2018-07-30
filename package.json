@@ -1,14 +1,24 @@
 {
   "name": "mpvue-modal-extend",
   "version": "1.0.0",
-  "description": "mpvue小程序modal组件",
+  "description": "mpvue小程序modal组件，对微信开发能力做了集成(基于mpvue框架)",
   "main": "src/modal.vue",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "modal"
+    "modal",
+    "mpvue",
+    "mpvue-modal",
+    "extend"
   ],
-  "author": "Johnsen <jiajunzhou1994@163.com>",
+  "author": {
+    "name": "JohnsenZhou",
+    "email": "jiajunzhou1994@163.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JohnsenZhou/mpvue-modal-extend"
+  },
   "license": "MIT"
 }
