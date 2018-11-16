@@ -87,8 +87,8 @@
 | 属性名 | 类型 | 默认值 | 必填 | 说明 |
 | ------------- | ------------- | -------- | ------ | ------ |
 | visible | Boolean | 无 | 是 | 对话框是否可见 |
-| openType | String | 无 | 否 | 微信开放能力，支持getPhoneNumber、contact、getUserInfo、openSetting |
-| title |  String | 无 | 否 | 提示的标题 |
+| openType | String | 无 | 否 | 微信开放能力，支持getPhoneNumber、contact、share、getUserInfo、openSetting |
+| title |  String | 无 | 否 | 提示的标题，不传则不显示 |
 | content | String | 无 | 是 | 提示的内容 |
 | showCancel | Boolean | true | 否 | 是否显示取消按钮 |
 | cancelText | String | 取消 | 否 | 取消按钮的文字，最多 4 个字符 |

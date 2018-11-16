@@ -9,9 +9,9 @@
       </div>
       <div class="hlj-modal-footer">
         <div v-if="showCancel" class="hlj-modal-btn hlj-modal-cancle">
-          <a @click="handleBtnClick('close')" :style="{color: cancelColor}">{{cancelText}}</a>
+          <a @click="handleBtnClick" :style="{color: cancelColor}">{{cancelText}}</a>
         </div>
-        <div class="hlj-modal-btn hlj-modal-comform" @click="handleBtnClick('confirm', $event)">
+        <div class="hlj-modal-btn hlj-modal-comform" @click="handleBtnClick">
           <a :style="{color: confirmColor}">{{confirmText}}</a>
           <button
             v-if="openType === 'getPhoneNumber'"
@@ -23,6 +23,10 @@
             open-type="contact"
             class="hlj-modal-auth"
             @contact="handleAuthBtnChange"/>
+          <button
+            v-if="openType === 'share'"
+            open-type="share"
+            class="hlj-modal-auth"/>
           <button
             v-if="openType === 'getUserInfo'"
             open-type="getUserInfo"
@@ -75,16 +79,8 @@
     },
 
     methods: {
-      handleBtnClick (type, e) {
-        if (this.openType) {
-          this.$emit('close')
-        } else {
-          if (type === 'confirm') {
-            this.$emit('confirm', e)
-          } else {
-            this.$emit('close')
-          }
-        }
+      handleBtnClick () {
+        this.$emit('close')
       },
       handleAuthBtnChange (e) {
         this.$emit('confirm', e)
