@@ -1,6 +1,6 @@
 {
   "name": "mpvue-modal-extend",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "mpvue小程序modal组件，对微信开发能力做了集成(基于mpvue框架)",
   "main": "src/modal.vue",
   "scripts": {

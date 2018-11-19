@@ -12,7 +12,7 @@
           <a @click="handleBtnClick" :style="{color: cancelColor}">{{cancelText}}</a>
         </div>
         <div class="hlj-modal-btn hlj-modal-comform" @click="handleBtnClick">
-          <a :style="{color: confirmColor}">{{confirmText}}</a>
+          <a @click="handleBtnConfirm" :style="{color: confirmColor}">{{confirmText}}</a>
           <button
             v-if="openType === 'getPhoneNumber'"
             open-type="getPhoneNumber"
@@ -81,6 +81,10 @@
     methods: {
       handleBtnClick () {
         this.$emit('close')
+      },
+      handleBtnConfirm (e) {
+        if (this.openType) return
+        this.$emit('confirm', e)
       },
       handleAuthBtnChange (e) {
         this.$emit('confirm', e)
